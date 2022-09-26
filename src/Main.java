@@ -7,10 +7,11 @@ public class Main {
         int vklad = 15000;
         int percentYear = 7;
         int monthVklad = 0;
+        int monthAll = 108;
         int total = 0;
 
-        while (total <= 12_000_000) {
-            monthVklad = monthVklad + 1;
+        for (;monthVklad <= monthAll;monthVklad = monthVklad + 1) {
+
             total = vklad + total + total / 100 * percentYear / 12;
             if (monthVklad % 6 == 0) {
                 System.out.println("Месяц  " + monthVklad +
@@ -18,7 +19,7 @@ public class Main {
             }
 
         }
-
+        System.out.println("За 9 лет, сумма накоплений составит " + total + " рублей");
 
     }
 }
