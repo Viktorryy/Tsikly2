@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         // Домашнее задание 1
-        // задача 2
+        // задача 3
 
 
         int vklad = 15000;
