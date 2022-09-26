@@ -1,19 +1,22 @@
 public class Main {
     public static void main(String[] args) {
         // Домашнее задание 2
-        // задача 2
+        // задача 3
 
 
-        int i = 1;
+        int population = 12_000_000;
+        int fertility1000 = 17;
+        int mortality1000 = 8;
 
-        while ( i <= 10) {
-          System.out.print(" " + i);
-          i = i + 1;
+
+        int term = 10;
+
+         for ( int i = 1; i <= term; i++) {
+
+             population = population + population / 1000 * (fertility1000 - mortality1000);
+
+             System.out.println("Год " + i + ", численность населения составляет " + population);
         }
-        System.out.println();
 
-        for (i = 10; i >= 1; i-- ) {
-            System.out.print(" " + i);
-        }
     }
 }
