@@ -1,22 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        // Домашнее задание 2
-        // задача 3
+        // Домашнее задание 1
+        // задача 1
 
 
-        int population = 12_000_000;
-        int fertility1000 = 17;
-        int mortality1000 = 8;
+        int vklad = 15000;
+        int percentYear = 7;
+        int monthVklad = 0;
+        int total = 0;
 
+        while (total <= 12_000_000) {
+            monthVklad = monthVklad + 1;
+            total = vklad + total + total / 100 * percentYear / 12;
 
-        int term = 10;
-
-         for ( int i = 1; i <= term; i++) {
-
-             population = population + population / 1000 * (fertility1000 - mortality1000);
-
-             System.out.println("Год " + i + ", численность населения составляет " + population);
+            System.out.println("Месяц  " + monthVklad + ", сумма накоплений составляет " + total);
         }
+
 
     }
 }
