@@ -11,7 +11,7 @@ public class Main {
 
         while (total <= 12_000_000) {
             monthVklad = monthVklad + 1;
-            total = vklad + total + total / 100 * percentYear / 12;
+            total = vklad + total + total / 100 * percentYear ;
 
             System.out.println("Месяц  " + monthVklad + ", сумма накоплений составляет " + total);
         }
